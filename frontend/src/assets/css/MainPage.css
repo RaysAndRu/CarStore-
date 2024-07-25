@@ -1,0 +1,155 @@
+.page {
+	max-width: 1200px;
+	padding: 15px;
+}
+
+.page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Добавленное свойство для создания пространства между ссылками */
+}
+
+.page-main a {
+    font-size: 45px;
+    color: #000;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out; /* Добавленное свойство для плавного перехода */
+}
+
+.page-main a {
+	font-size: 45px;
+	color: #000;
+	text-decoration: none;
+}
+
+.page-main a:hover {
+	text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(to right, #f5f7fa, #6c757d);
+}
+
+.page-main a:hover {
+    animation: underline 0.3s ease-in-out forwards;
+}
+
+@keyframes underline {
+    from { text-decoration: none; }
+    to { text-decoration: underline; }
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-main a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: #007bff;
+}
+
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #6c757d);
+    color: #333;
+}
+
+/* Page container */
+.page {
+    max-width: 1200px;
+    padding: 15px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Navigation links */
+.page-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f5f7fa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.page-main a {
+    font-size: 45px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.page-main a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.page-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+/* Добавьте этот CSS код в ваш файл стилей */
+body {
+    background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
