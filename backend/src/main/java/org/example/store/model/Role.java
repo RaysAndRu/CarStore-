@@ -1,21 +1,20 @@
-package org.example.model;
+package org.example.store.model;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@Document(collection = "cars")
-public class Car {
+@Document(collection = "roles")
+public class Role {
     @MongoId
-    private String id;
-    private String image;
-    private String title;
-    private String color;
-    private String power;
-    private  int price;
+    String id;
+
+    @NotBlank(message = "role cannot be empty")
+    String title;
 }
